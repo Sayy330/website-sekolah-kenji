@@ -1,0 +1,153 @@
+/* ============================
+   Global Styles
+============================ */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Mengatur padding dan margin untuk seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tautan secara default */
+a {
+    color: #28a745; /* Warna hijau untuk tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* ============================
+   Navbar Styles (Dengan Logo)
+============================ */
+
+nav {
+    background-color: #ffffff; /* Latar belakang putih untuk nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px; /* Menyesuaikan tinggi logo */
+}
+
+nav .nav-links {
+    display: flex;
+}
+
+nav .nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s; /* Transisi pada background dan transform */
+}
+
+/* Efek hover pada navbar */
+nav .nav-links a:hover {
+    background-color: #4400ff;
+    transform: scale(1.1);
+}
+
+/* Efek klik (active) pada tautan */
+nav .nav-links a:active {
+    transform: scale(0.95); /* Sedikit mengecil saat diklik */
+    transition: transform 0.1s ease-in; /* Animasi saat klik */
+}
+
+/* ============================
+   Section Styles
+============================ */
+
+/* Memberikan jarak dan pengaturan untuk setiap section */
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* Pusatkan konten */
+}
+
+/* Mengatur judul setiap bagian */
+.section-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #28a745;
+    font-weight: bold;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 5px;
+}
+
+/* Mengatur konten dalam setiap bagian */
+.content {
+    margin-bottom: 40px;
+}
+
+/* ============================
+   Foto Sekolah Styles
+============================ */
+
+#foto-sekolah {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.foto-sekolah {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-sekolah:hover {
+    transform: scale(1.05); /* Efek zoom saat hover pada gambar */
+}
+
+/* ============================
+   Footer Styles
+============================ */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* ============================
+   Responsiveness (Mobile-Friendly)
+============================ */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav .nav-links a {
+        padding: 10px;
+    }
+}
